@@ -100,9 +100,9 @@ CREATE TABLE PROVEEDOR (
 -- las transacciones con el extranjero, por lo tanto es obligatorio
 -- saber de donde son para facilitar el cumplimiento de estas regulaciones
 
-  pais VARCHAR2(100) NOT NULL,
+  id_pais NUMBER NOT NULL,
 
-  ciudad VARCHAR2(100) NOT NULL,
+  id_ciudad NUMBER NOT NULL,
 
 -- Las direcciones en este contexto apenas se repetiran,
 -- ya que no manejaremos envios, por ende no tendremos
@@ -111,6 +111,10 @@ CREATE TABLE PROVEEDOR (
   direccion VARCHAR(100) NOT NULL,
 
   CONSTRAINT pk_proveedor PRIMARY KEY (id_proveedor)
+
+  CONSTRAINT fk_id_pais FOREIGN KEY (id_pais)
+
+  CONSTRAINT fk_id_ciudad FOREIGN KEY (id_ciudad)
 
 );
 
@@ -209,8 +213,6 @@ CREATE TABLE EMPLEADO (
   primer_nombre VARCHAR2(50) NOT NULL,
 
   segundo_nombre VARCHAR2(50),
-
-  tercer_nombre VARCHAR2(50),
 
   sueldo NUMBER NOT NULL,
 

@@ -1,30 +1,3 @@
---SUCURSALES
-INSERT INTO SUCURSAL (nombre,direccion)
-VALUES('Casa Matriz', 'San Pedro 519');
-
-INSERT INTO SUCURSAL (nombre,direccion)
-VALUES('Top 9 Puerto Montt', 'Avenida Presidente Ibáñez 123');
-
-INSERT INTO SUCURSAL (nombre, direccion)
-VALUES('Top 9 Osorno', 'Patricio Lynch 1437');
-
---CARGO
-INSERT INTO CARGO (nombre_cargo)
-VALUES('Cajero');
-INSERT INTO CARGO (nombre_cargo)
-VALUES('Bodegero');
-INSERT INTO CARGO (nombre_cargo)
-VALUES('Gerente');
-
---IDIOMA
-INSERT INTO IDIOMA (nombre)
-VALUES('Español');
-INSERT INTO IDIOMA (nombre)
-VALUES('Ingles');
-INSERT INTO IDIOMA (nombre)
-VALUES('Japonés');
-
---PROVEEDOR
 INSERT INTO CIUDAD (nombre_proveedor,telefono,email,id_pais,id_ciudad,direccion)
 VALUES ("Aliquet Libero Integer Corp.","+56992637147","tristique.senectus@yahoo.org",1,56,"Ap #460-1446 Erat, Ave");
 INSERT INTO CIUDAD (nombre_proveedor,telefono,email,id_pais,id_ciudad,direccion)
