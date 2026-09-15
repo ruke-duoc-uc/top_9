@@ -11,5 +11,10 @@
 <pathName>C:\Users\W608-PCXX\Downloads\hwhwereb</pathName>
 <dbType>17</dbType>
 </importDDLFileStamp>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>creacion_tablas.sql</fileName>
+<pathName>C:\Users\W608-PCXX\Downloads\aaaaaaaa</pathName>
+<dbType>17</dbType>
+</importDDLFileStamp>
 </importDDLFileStamps>
 </relationalModel>

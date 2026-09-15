@@ -12,5 +12,8 @@
 <designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="4821F55C-7051-CF74-263D-50003C49C222">
 <designStoragePath>C:\tablas</designStoragePath>
 </designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="5A836395-2514-41C4-7C43-98BC421AA202">
+<designStoragePath>C:\creacion_tablas</designStoragePath>
+</designDescr>
 </usedDesignStorageDescriptors>
 </OSDM_Design>
