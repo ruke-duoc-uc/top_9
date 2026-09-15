@@ -239,8 +239,6 @@ CREATE TABLE PRODUCTO (
 
   nombre_producto VARCHAR2(100) NOT NULL,
 
-  stock NUMBER NOT NULL,
-
   min_jugadores NUMBER NOT NULL,
 
   precio NUMBER NOT NULL,
@@ -269,6 +267,17 @@ CREATE TABLE PRODUCTO (
 
 );
 
+CREATE TABLE STOCK(
+  id_stock NUMBER GENERATED ALWAYS AS IDENTITY,
+  
+  cantidad_producto NUMBER NOT NULL,
+
+  CONSTRAINT pk_stock PRIMARY KEY (id_stock),
+
+  CONSTRAINT fk_sucursal FOREIGN KEY (id_sucursal)
+
+  CONSTRAINT fk_producto FOREIGN KEY (id_producto)
+)
 
 
 CREATE TABLE VENTA (
