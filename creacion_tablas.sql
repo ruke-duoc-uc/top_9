@@ -204,7 +204,7 @@ CREATE TABLE EVENTO (
   
   CONSTRAINT pk_evento PRIMARY KEY (id_evento),
 
-  CONSTRAINT fk_sucursal FOREIGN KEY REFERENCES SUCURSAL(id_sucursal)
+  CONSTRAINT fk_sucursal_evento FOREIGN KEY (id_sucursal) REFERENCES SUCURSAL(id_sucursal)
 );
 
 --tablas que tienen llaves foraneas
@@ -240,7 +240,7 @@ CREATE TABLE EMPLEADO (
 
   CONSTRAINT fk_empleado_cargo FOREIGN KEY (id_cargo) REFERENCES CARGO(id_cargo),
 
-  CONSTRAINT fk_sucursal FOREIGN KEY (id_sucursal) REFERENCES SUCURSAL(id_sucursal)
+  CONSTRAINT fk_sucursal_empleado FOREIGN KEY (id_sucursal) REFERENCES SUCURSAL(id_sucursal)
 );
 
 
