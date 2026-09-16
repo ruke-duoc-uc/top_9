@@ -75,7 +75,7 @@ CREATE TABLE CLIENTE (
 
   rut VARCHAR2(12) NOT NULL,
 
--- Los clientes estan obligados a dar estos datos,
+-- Los clientes no estan obligados a dar estos datos,
 -- ya que no son requeridos para la boleta
 
   email VARCHAR2(100),
