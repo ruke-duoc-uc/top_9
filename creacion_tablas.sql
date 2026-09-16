@@ -109,7 +109,7 @@ CREATE TABLE PROVEEDOR (
 -- problemas por datos redundantes
 
   direccion VARCHAR(100) NOT NULL,
-
+z
   CONSTRAINT pk_proveedor PRIMARY KEY (id_proveedor)
 
   CONSTRAINT fk_id_pais FOREIGN KEY (id_pais)
@@ -213,6 +213,8 @@ CREATE TABLE EMPLEADO (
   primer_nombre VARCHAR2(50) NOT NULL,
 
   segundo_nombre VARCHAR2(50),
+
+-- Este sueldo esta en bruto
 
   sueldo NUMBER NOT NULL,
 
