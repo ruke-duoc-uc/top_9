@@ -197,13 +197,17 @@ CREATE TABLE EVENTO (
   fecha_final DATE NOT NULL,
   
   cupo_maximo NUMBER NOT NULL,
-  
-  CONSTRAINT pk_evento PRIMARY KEY (id_evento)
 
+  -- Ciertos eventos estan ligados a una sucursal
+
+  id_sucursal NUMBER,
+  
+  CONSTRAINT pk_evento PRIMARY KEY (id_evento),
+
+  CONSTRAINT fk_sucursal FOREIGN KEY REFERENCES SUCURSAL(id_sucursal)
 );
 
 --tablas que tienen llaves foraneas
-
 
 
 CREATE TABLE EMPLEADO (
