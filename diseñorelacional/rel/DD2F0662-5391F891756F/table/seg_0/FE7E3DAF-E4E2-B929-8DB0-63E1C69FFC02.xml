@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FE7E3DAF-E4E2-B929-8DB0-63E1C69FFC02" name="DETALLE_VENTA">
+<sourceDDLFile>Data_Base_Top9.sql</sourceDDLFile>
+<createdBy>rena4</createdBy>
+<createdTime>2026-09-16 01:46:12 UTC</createdTime>
+<ownerDesignName>diseñorelacional</ownerDesignName>
+<importedID>B3087E6B-CFCF-9008-F0BF-393B78B442C2</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_detalle" id="D3C0C1A3-8EF7-08B2-43F5-61B6CD76E18A">
+<sourceDDLFile>Data_Base_Top9.sql</sourceDDLFile>
+<createdBy>rena4</createdBy>
+<createdTime>2026-09-16 01:46:12 UTC</createdTime>
+<ownerDesignName>diseñorelacional</ownerDesignName>
+<importedID>84C53A7B-0668-2907-0989-40F81CC902AC</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>829ED3D0-7BC0-2295-4C17-829383613182</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="cantidad" id="E3AA6CF6-FCA0-86A9-C408-3D2997388BFE">
+<sourceDDLFile>Data_Base_Top9.sql</sourceDDLFile>
+<createdBy>rena4</createdBy>
+<createdTime>2026-09-16 01:46:12 UTC</createdTime>
+<ownerDesignName>diseñorelacional</ownerDesignName>
+<importedID>14DF3496-2DB7-E2F0-1A3C-A39E06118974</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>829ED3D0-7BC0-2295-4C17-829383613182</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precio_unitario" id="A7F7FBC0-0EB4-CC57-156A-0AFA96D30F90">
+<sourceDDLFile>Data_Base_Top9.sql</sourceDDLFile>
+<createdBy>rena4</createdBy>
+<createdTime>2026-09-16 01:46:12 UTC</createdTime>
+<ownerDesignName>diseñorelacional</ownerDesignName>
+<importedID>277527FD-A2A0-5F60-11F6-6868CC2C0D07</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>829ED3D0-7BC0-2295-4C17-829383613182</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_venta" id="F336E9BB-51A1-4956-7832-E81C4357BFC4">
+<sourceDDLFile>Data_Base_Top9.sql</sourceDDLFile>
+<createdBy>rena4</createdBy>
+<createdTime>2026-09-16 01:46:12 UTC</createdTime>
+<ownerDesignName>diseñorelacional</ownerDesignName>
+<importedID>4402C625-F4D4-9B06-3B4B-4CE0CBE2AD65</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>829ED3D0-7BC0-2295-4C17-829383613182</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB839EAF-DBC5-9B67-D80D-3952F689D13C" referredColumn="3D7265A0-A9E3-5BFD-E605-EC3D0C7B3C19"/>
+</associations>
+</Column>
+<Column name="id_producto" id="B6B3E720-832E-EAE4-B070-4E47F39EE6E3">
+<sourceDDLFile>Data_Base_Top9.sql</sourceDDLFile>
+<createdBy>rena4</createdBy>
+<createdTime>2026-09-16 01:46:12 UTC</createdTime>
+<ownerDesignName>diseñorelacional</ownerDesignName>
+<importedID>5836B402-7E8B-5CFA-1599-1CFE598DE3F5</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>829ED3D0-7BC0-2295-4C17-829383613182</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9AB72EE1-3C52-E367-71F2-19E378D3055A" referredColumn="28DF1CD9-B55F-D0D1-7F0C-6A4225CC31AB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8C37A25D-0990-4B16-D37C-2873D1F401CC" name="pk_detalle_venta">
+<sourceDDLFile>Data_Base_Top9.sql</sourceDDLFile>
+<createdBy>rena4</createdBy>
+<createdTime>2026-09-16 01:46:12 UTC</createdTime>
+<ownerDesignName>diseñorelacional</ownerDesignName>
+<importedID>EE82CC20-5949-016E-7C28-9E6059A26764</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3C0C1A3-8EF7-08B2-43F5-61B6CD76E18A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5DA1DC88-A985-99F5-4FFF-178ADCB2B910" name="fk_detalle_producto">
+<createdBy>rena4</createdBy>
+<createdTime>2026-09-16 01:46:12 UTC</createdTime>
+<ownerDesignName>diseñorelacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6B3E720-832E-EAE4-B070-4E47F39EE6E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7378154B-CA74-BE81-4A95-2F8D92219DED" name="fk_detalle_venta">
+<createdBy>rena4</createdBy>
+<createdTime>2026-09-16 01:46:12 UTC</createdTime>
+<ownerDesignName>diseñorelacional</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F336E9BB-51A1-4956-7832-E81C4357BFC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

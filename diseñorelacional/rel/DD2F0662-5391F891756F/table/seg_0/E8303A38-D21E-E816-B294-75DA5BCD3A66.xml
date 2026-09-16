@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E8303A38-D21E-E816-B294-75DA5BCD3A66" name="EVENTO">
+<sourceDDLFile>Data_Base_Top9.sql</sourceDDLFile>
+<createdBy>rena4</createdBy>
+<createdTime>2026-09-16 01:46:12 UTC</createdTime>
+<ownerDesignName>diseñorelacional</ownerDesignName>
+<importedID>3CC66E4F-373E-5E6C-CADD-571E814D6D02</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_evento" id="F1B2A587-3E6A-C922-5BE0-33CC7CD5CB33">
+<sourceDDLFile>Data_Base_Top9.sql</sourceDDLFile>
+<createdBy>rena4</createdBy>
+<createdTime>2026-09-16 01:46:12 UTC</createdTime>
+<ownerDesignName>diseñorelacional</ownerDesignName>
+<importedID>2FA5A1DD-7627-574D-265C-6260EF792D20</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>829ED3D0-7BC0-2295-4C17-829383613182</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="nombre_evento" id="004BFB18-1C78-6E96-33BB-56FF85383B4A">
+<sourceDDLFile>Data_Base_Top9.sql</sourceDDLFile>
+<createdBy>rena4</createdBy>
+<createdTime>2026-09-16 01:46:12 UTC</createdTime>
+<ownerDesignName>diseñorelacional</ownerDesignName>
+<importedID>5FD47655-A610-829A-D345-29B7817F4548</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>CFF40E5E-5A1A-1604-AED2-D208B396B24D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_evento" id="C62585AD-B130-1321-B2A4-CA9F38407815">
+<sourceDDLFile>Data_Base_Top9.sql</sourceDDLFile>
+<createdBy>rena4</createdBy>
+<createdTime>2026-09-16 01:46:12 UTC</createdTime>
+<ownerDesignName>diseñorelacional</ownerDesignName>
+<importedID>C272FA12-F496-4E6A-BEB0-382B677ECC87</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2982C471-1104-20EA-5526-1AA4AC14870D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_inicio" id="9EE433AF-4C8E-AD72-C785-7500B5DCEB06">
+<sourceDDLFile>Data_Base_Top9.sql</sourceDDLFile>
+<createdBy>rena4</createdBy>
+<createdTime>2026-09-16 01:46:12 UTC</createdTime>
+<ownerDesignName>diseñorelacional</ownerDesignName>
+<importedID>18470083-59FF-9A89-AFD5-F413B6EA9FF9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>580745DD-AECA-FBC5-E414-7A19B2D8E935</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_final" id="748B527F-3531-1461-F8CE-309C4323B02C">
+<sourceDDLFile>Data_Base_Top9.sql</sourceDDLFile>
+<createdBy>rena4</createdBy>
+<createdTime>2026-09-16 01:46:12 UTC</createdTime>
+<ownerDesignName>diseñorelacional</ownerDesignName>
+<importedID>7111C0B6-AEF7-DC03-D69B-9B75E29FA124</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>580745DD-AECA-FBC5-E414-7A19B2D8E935</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cupo_maximo" id="14E91043-C6E6-6017-2384-A216BD4F7E8E">
+<sourceDDLFile>Data_Base_Top9.sql</sourceDDLFile>
+<createdBy>rena4</createdBy>
+<createdTime>2026-09-16 01:46:12 UTC</createdTime>
+<ownerDesignName>diseñorelacional</ownerDesignName>
+<importedID>5E987F79-A7DA-ED91-5F82-9698F37A0D66</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>829ED3D0-7BC0-2295-4C17-829383613182</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="98C34669-392B-8199-4AD2-B2344C6AD17C" name="pk_evento">
+<sourceDDLFile>Data_Base_Top9.sql</sourceDDLFile>
+<createdBy>rena4</createdBy>
+<createdTime>2026-09-16 01:46:12 UTC</createdTime>
+<ownerDesignName>diseñorelacional</ownerDesignName>
+<importedID>040BDD5B-CA5C-84B8-5FBA-C43D6F6474B1</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F1B2A587-3E6A-C922-5BE0-33CC7CD5CB33"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

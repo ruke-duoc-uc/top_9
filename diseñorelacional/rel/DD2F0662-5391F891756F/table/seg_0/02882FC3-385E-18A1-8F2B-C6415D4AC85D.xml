@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="02882FC3-385E-18A1-8F2B-C6415D4AC85D" name="CATEGORIA">
+<sourceDDLFile>Data_Base_Top9.sql</sourceDDLFile>
+<createdBy>rena4</createdBy>
+<createdTime>2026-09-16 01:46:12 UTC</createdTime>
+<ownerDesignName>diseñorelacional</ownerDesignName>
+<importedID>8B67F76C-8CA2-CFEC-DF61-A3E838C0035B</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_categoria" id="81A5DAD4-D5A8-53F8-A369-EACE2ACF56CD">
+<sourceDDLFile>Data_Base_Top9.sql</sourceDDLFile>
+<createdBy>rena4</createdBy>
+<createdTime>2026-09-16 01:46:12 UTC</createdTime>
+<ownerDesignName>diseñorelacional</ownerDesignName>
+<importedID>DBB494CD-64DA-F0B4-07F9-10A9BABB7335</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>829ED3D0-7BC0-2295-4C17-829383613182</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementGenerateAlways>true</autoIncrementGenerateAlways>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementOrder>false</autoIncrementOrder>
+</Column>
+<Column name="nombre_categoria" id="8FBB9A47-6F42-31ED-89B7-DC8F5EEE14A4">
+<sourceDDLFile>Data_Base_Top9.sql</sourceDDLFile>
+<createdBy>rena4</createdBy>
+<createdTime>2026-09-16 01:46:12 UTC</createdTime>
+<ownerDesignName>diseñorelacional</ownerDesignName>
+<importedID>812C3FA5-F00F-FD80-739B-F52C0B6B3B1C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2982C471-1104-20EA-5526-1AA4AC14870D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="DD183E70-5D39-4DFC-A897-DEFC174C720F">
+<sourceDDLFile>Data_Base_Top9.sql</sourceDDLFile>
+<createdBy>rena4</createdBy>
+<createdTime>2026-09-16 01:46:12 UTC</createdTime>
+<ownerDesignName>diseñorelacional</ownerDesignName>
+<importedID>5FE2065F-B325-DD3E-A820-7DA8E8EB8B67</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>4B5274C5-C964-C08A-E1AF-AA068A70BB58</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="557A4C25-46CC-C0E9-9505-AE692ED5B29C" name="pk_categoria">
+<sourceDDLFile>Data_Base_Top9.sql</sourceDDLFile>
+<createdBy>rena4</createdBy>
+<createdTime>2026-09-16 01:46:12 UTC</createdTime>
+<ownerDesignName>diseñorelacional</ownerDesignName>
+<importedID>F25D6547-564F-F969-5BBD-EE70163098E2</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81A5DAD4-D5A8-53F8-A369-EACE2ACF56CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

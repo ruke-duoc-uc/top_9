@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D1BAB1ED-DB1A-7B3C-A199-044FCA930A72" containerWithKeyObject="71F691FB-6DC5-F5BC-D2E6-860B1B9E4E6C" localFKIndex="70AC84F8-1134-F2BB-3836-5A1D17570813" name="fk_venta_metodo">
+<sourceDDLFile>Data_Base_Top9.sql</sourceDDLFile>
+<createdBy>rena4</createdBy>
+<createdTime>2026-09-16 01:46:12 UTC</createdTime>
+<ownerDesignName>diseñorelacional</ownerDesignName>
+<importedID>78441273-6DD8-91BD-8E16-B0CA4815A706</importedID>
+<referredTableLongName>METODO_PAGO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1B57F74F-5A49-85D0-2C2F-BBFC489214CD</referredTableID>
+<keyObject>26AF6768-9CA8-44D9-D8E0-65F9BE0B3744</keyObject>
+<referredKeyID>26AF6768-9CA8-44D9-D8E0-65F9BE0B3744</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_metodo_pago</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

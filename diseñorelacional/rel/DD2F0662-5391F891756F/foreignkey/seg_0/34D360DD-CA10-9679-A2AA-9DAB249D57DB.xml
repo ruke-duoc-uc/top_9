@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="34D360DD-CA10-9679-A2AA-9DAB249D57DB" containerWithKeyObject="171AED8D-2C5E-BA2A-CC75-4F4347C1D12F" localFKIndex="9CA7BF1C-974F-B25F-C45C-F0D5DAF3BF6B" name="fk_idioma_producto">
+<sourceDDLFile>Data_Base_Top9.sql</sourceDDLFile>
+<createdBy>rena4</createdBy>
+<createdTime>2026-09-16 01:46:12 UTC</createdTime>
+<ownerDesignName>diseñorelacional</ownerDesignName>
+<importedID>7A86EBA8-110A-9E0A-7C0D-418EF101E8C0</importedID>
+<referredTableLongName>IDIOMA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B7F64B6E-9FFD-1193-19EF-46A521A70AA5</referredTableID>
+<keyObject>1BE114EF-32CE-CA44-CC59-95AE415A3FE7</keyObject>
+<referredKeyID>1BE114EF-32CE-CA44-CC59-95AE415A3FE7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_idioma</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
