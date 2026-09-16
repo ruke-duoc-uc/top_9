@@ -75,7 +75,7 @@ CREATE TABLE CLIENTE (
 
   rut VARCHAR2(12) NOT NULL,
 
--- Los clientes estan obligados a dar estos datos,
+-- Los clientes no estan obligados a dar estos datos,
 -- ya que no son requeridos para la boleta
 
   email VARCHAR2(100),
@@ -197,13 +197,17 @@ CREATE TABLE EVENTO (
   fecha_final DATE NOT NULL,
   
   cupo_maximo NUMBER NOT NULL,
-  
-  CONSTRAINT pk_evento PRIMARY KEY (id_evento)
 
+  -- Ciertos eventos estan ligados a una sucursal
+
+  id_sucursal NUMBER,
+  
+  CONSTRAINT pk_evento PRIMARY KEY (id_evento),
+
+  CONSTRAINT fk_sucursal_evento FOREIGN KEY (id_sucursal) REFERENCES SUCURSAL(id_sucursal)
 );
 
 --tablas que tienen llaves foraneas
-
 
 
 CREATE TABLE EMPLEADO (
@@ -236,7 +240,7 @@ CREATE TABLE EMPLEADO (
 
   CONSTRAINT fk_empleado_cargo FOREIGN KEY (id_cargo) REFERENCES CARGO(id_cargo),
 
-  CONSTRAINT fk_sucursal FOREIGN KEY (id_sucursal) REFERENCES SUCURSAL(id_sucursal)
+  CONSTRAINT fk_sucursal_empleado FOREIGN KEY (id_sucursal) REFERENCES SUCURSAL(id_sucursal)
 );
 
 
