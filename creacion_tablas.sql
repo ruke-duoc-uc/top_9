@@ -81,7 +81,9 @@ CREATE TABLE CLIENTE (
   email VARCHAR2(100),
 
   telefono VARCHAR2(15),
--- No manejaremos direccion, ya que no manejaremos delivery
+
+  direccion VARCHAR2(150),
+
   CONSTRAINT pk_cliente PRIMARY KEY (id_cliente)
 
 );
@@ -100,17 +102,21 @@ CREATE TABLE PROVEEDOR (
 -- las transacciones con el extranjero, por lo tanto es obligatorio
 -- saber de donde son para facilitar el cumplimiento de estas regulaciones
 
-  pais VARCHAR2(100) NOT NULL,
+  id_pais NUMBER NOT NULL,
 
-  ciudad VARCHAR2(100) NOT NULL,
+  id_ciudad NUMBER NOT NULL,
 
 -- Las direcciones en este contexto apenas se repetiran,
 -- ya que no manejaremos envios, por ende no tendremos
 -- problemas por datos redundantes
 
-  direccion VARCHAR(100) NOT NULL,
+  direccion VARCHAR2(100) NOT NULL,
 
-  CONSTRAINT pk_proveedor PRIMARY KEY (id_proveedor)
+  CONSTRAINT pk_proveedor PRIMARY KEY (id_proveedor),
+
+  CONSTRAINT fk_id_pais FOREIGN KEY (id_pais) REFERENCES PAIS(id_pais),
+
+  CONSTRAINT fk_id_ciudad FOREIGN KEY (id_ciudad) REFERENCES CIUDAD(id_ciudad)
 
 );
 
@@ -210,8 +216,6 @@ CREATE TABLE EMPLEADO (
 
   segundo_nombre VARCHAR2(50),
 
-  tercer_nombre VARCHAR2(50),
-
   sueldo NUMBER NOT NULL,
 
   email VARCHAR2(100) NOT NULL,
@@ -226,7 +230,7 @@ CREATE TABLE EMPLEADO (
 
   CONSTRAINT fk_empleado_cargo FOREIGN KEY (id_cargo) REFERENCES CARGO(id_cargo),
 
-  CONSTRAINT fk_sucursal FOREIGN KEY (id_sucursal) REFERENCES CARGO(id_sucursal)
+  CONSTRAINT fk_sucursal FOREIGN KEY (id_sucursal) REFERENCES SUCURSAL(id_sucursal)
 );
 
 
@@ -251,7 +255,7 @@ CREATE TABLE PRODUCTO (
 
   id_marca NUMBER NOT NULL,
   
-  id_idioma VARCHAR2(50) NOT NULL,
+  id_idioma NUMBER NOT NULL,
   
   CONSTRAINT pk_producto PRIMARY KEY (id_producto),
 
@@ -270,14 +274,18 @@ CREATE TABLE PRODUCTO (
 CREATE TABLE STOCK(
   id_stock NUMBER GENERATED ALWAYS AS IDENTITY,
   
+  id_sucursal NUMBER NOT NULL,
+
+  id_producto NUMBER NOT NULL,
+
   cantidad_producto NUMBER NOT NULL,
 
   CONSTRAINT pk_stock PRIMARY KEY (id_stock),
 
-  CONSTRAINT fk_sucursal FOREIGN KEY (id_sucursal)
+  CONSTRAINT fk_stock_sucursal FOREIGN KEY (id_sucursal) REFERENCES SUCURSAL(id_sucursal),
 
-  CONSTRAINT fk_producto FOREIGN KEY (id_producto)
-)
+  CONSTRAINT fk_stock_producto FOREIGN KEY (id_producto) REFERENCES PRODUCTO(id_producto)
+);
 
 
 CREATE TABLE VENTA (
