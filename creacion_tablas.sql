@@ -216,6 +216,12 @@ CREATE TABLE EMPLEADO (
 
   segundo_nombre VARCHAR2(50),
 
+  primer_apellido VARCHAR2(50),
+
+  segundo_apellido VARCHAR2(50),
+
+-- Este sueldo esta en bruto
+
   sueldo NUMBER NOT NULL,
 
   email VARCHAR2(100) NOT NULL,
